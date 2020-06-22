@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: postgres
+    container_name: gostack_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=gostack_desafio09_tests
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
